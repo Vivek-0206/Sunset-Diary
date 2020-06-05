@@ -1,62 +1,80 @@
 <!DOCTYPE html>
 <htm lang="en">
+
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Sunset Diary</title>
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
         <link href="style.css" rel="stylesheet">
     </head>
+
     <body>
-        <header class="jumbotron">
+        <header class="header_area"  id="head">
+            <div class="main_menu" >
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <a class="navbar-brand" href="index.html">Sunset Diary</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                         <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                            <ul class="nav navbar-nav menu_nav justify-content-end">
+                                <li class="nav-item active"><a class="nav-link" href="#head">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="jumbotron">
             <div class="container">
                 <div class="row row-header">
-                    <div class="col-12 col-sm-8">
+                    <div class="col-12 col-sm-5 col-md-6 col-lg-8">
                         <h1>Shot On MI A3</h1>
                         <p>By VIVEK PATEL</p>
                     </div>
-                    <div class="col-12 col-sm">
-                        <img src="/Images/vivek.jpg" alt="VIVEK" height="250" width="250" style="border-radius: 50%;">
+                    <div class="col-12 col-sm-4 col-md-4 col-lg">
+                        <img src="/Images/vivek.jpg" alt="VIVEK" height="200" width="200" style="border-radius: 50%;">
                     </div>
                 </div>
             </div>
-        </header>
-
-        My Gallary
+        </div>
+        <!-- <div>
+            My Gallary
+        </div> -->
         <footer class="footer">
             <div class="container">
-                <div class="row">             
-                    <div class="col-4 offset-1 col-sm-2">
-                        <h5>Links</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-7 col-sm-5">
-                        
-                    </div>
-                    <div class="col-12 col-sm-4 align-self-center">
+                <div class="row">
+                    <div class="col-12 align-self-center">
                         <div class="text-center">
-                            <a href="#">Google+</a>
-                            <a href="#">Facebook</a>
-                            <a href="#">LinkedIn</a>
-                            <a href="#">Twitter</a>
-                            <a href="#">YouTube</a>
-                            <a href="#">Mail</a>
+                            <h3>For more please visit below</h3>
                         </div>
                     </div>
-               </div>
-               <div class="row justify-content-center">             
-                    <div class="col-auto">
-                        <p>© Copyright 2020 VIVEK PATEL</p>
+                    <div class="col-12 align-self-center">
+                        <div class="text-center">
+                            <a href="#"><i class="fa fa-pinterest" aria-hidden="true">pinterest</i></a>
+                        </div>
                     </div>
-               </div>
+                </div>
+                <hr>
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <p>Made with ❤️ VIVEK PATEL</p>
+                    </div>
+                </div>
             </div>
         </footer>
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     </body>
-</html>
+
+    </html>

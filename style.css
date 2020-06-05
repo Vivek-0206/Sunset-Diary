@@ -1,29 +1,29 @@
-.row-header{
-    margin:0px auto;
-    padding:0px;
-}
-
-.row-content {
-    margin:0px auto;
-    padding: 50px 0px 50px 0px;
-    border-bottom: 1px ridge;
-    min-height:400px;
-}
-
-.footer{
-    background-color: #D1C4E9;
-    margin:0px auto;
+.header_area {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background: transparent; }
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #343a40;
+    color: floralwhite;
+    margin: 0px auto;
     padding: 20px 0px 20px 0px;
 }
-.jumbotron {
-    padding:70px 30px 70px 30px;
-    margin:0px auto;
-    background: #9575CD ;
-    color:floralwhite;
-}
 
-address{
-    font-size:80%;
-    margin:0px;
-    color:#0f0f0f;
+.jumbotron {
+    margin-top: 50px;
+    background:#2f303b;
+    color: floralwhite;
+    padding-top: 20px;
+    padding-bottom: 1rem;
 }
+hr{
+    border-top: 1px solid aqua;    
+}6
