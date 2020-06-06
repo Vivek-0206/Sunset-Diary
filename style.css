@@ -2,7 +2,7 @@ body{
     background-color: #2f303b;
 }
 .footer {
-   
+    margin-top: 10px;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -39,6 +39,7 @@ hr{
 }
 .tc{
     text-align: center;
+    color: white;
 }
 .content{
     margin-bottom: 20px;
