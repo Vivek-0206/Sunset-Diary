@@ -6,27 +6,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Sunset Diary</title>
+
+        <!--Style Area-->
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+
+        <!--External Style-->
         <link href="style.css" rel="stylesheet">
     </head>
 
     <body>
-        <header class="header_area"  id="head">
-            <div class="main_menu" >
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!--Header Area-->
+        <header class="header_area" id="head">
+            <div class="main_menu">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
                     <div class="container">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <a class="navbar-brand" href="index.html">Sunset Diary</a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                         <span class="navbar-toggler-icon"></span>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
                         </button>
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-                            <ul class="nav navbar-nav menu_nav justify-content-end">
-                                <li class="nav-item active"><a class="nav-link" href="#head">Home</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                                <li class="nav-item "><a class="nav-link" href="aboutus.html">About</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                             </ul>
                         </div>
@@ -34,8 +40,10 @@
                 </nav>
             </div>
         </header>
+
+        <!--Jumbotron Area-->        
         <div class="jumbotron">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row row-header">
                     <div class="col-12 col-sm-5 col-md-6 col-lg-8">
                         <h1>Shot On MI A3</h1>
@@ -47,9 +55,51 @@
                 </div>
             </div>
         </div>
-        <!-- <div>
-            My Gallary
-        </div> -->
+
+        <!--Content Area-->
+        <div class="container-fluid">
+            <h2 class="tc">My gallery</h2>
+            <div class="row">
+                <div class="col-12 col-sm-4 col-md-4">
+                    <div class="card">
+                        <img src="/Images/1.jpg" class="card-img" alt="PROFILE">
+                        <div class="card-body">
+                            <h5 class="card-title">2 JUN</h5>
+                            <p class="card-text">By VIVEK PATEL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 col-md-4">
+                    <div class="card ">
+                        <img src="/Images/1.jpg" class="card-img" alt="PROFILE">
+                        <div class="card-body">
+                            <h5 class="card-title">3 JUN</h5>
+                            <p class="card-text">By VIVEK PATEL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 col-md-4">
+                    <div class="card ">
+                        <img src="/Images/1.jpg" class="card-img" alt="PROFILE">
+                        <div class="card-body">
+                            <h5 class="card-title">3 JUN</h5>
+                            <p class="card-text">By VIVEK PATEL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 col-md-4">
+                    <div class="card">
+                        <img src="/Images/1.jpg" class="card-img" alt="PROFILE">
+                        <div class="card-body">
+                            <h5 class="card-title">3 JUN</h5>
+                            <p class="card-text">By VIVEK PATEL</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Footer Area-->
         <footer class="footer">
             <div class="container">
                 <div class="row">
@@ -72,6 +122,9 @@
                 </div>
             </div>
         </footer>
+
+
+        <!--JS Script-->
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
