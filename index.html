@@ -16,10 +16,11 @@
     </head>
 
     <body>
+
         <!--Header Area-->
         <header class="header_area" id="head">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-                <div class="container-fluid">
+                <div class="container">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <a class="navbar-brand" href="index.html">Sunset Diary</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -38,10 +39,10 @@
                 </div>
             </nav>
         </header>
-      
+
         <!--Jumbotron Area-->
         <div class="jumbotron">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row row-header">
                     <div class="col-12 col-sm-5 col-md-6 col-lg-8">
                         <h1>Shot On MI A3</h1>
@@ -54,45 +55,53 @@
                 </div>
             </div>
         </div>
-
-        <!--Content Area-->
-        <div class="container-fluid">
+        <div class="container">
             <hr>
-            <h2 class="tc">My gallery</h2>
-            <div class="row">
-                <div class="col-12 col-sm-4 col-md-4">
-                    <div class="card">
-                        <img src="img/1.jpg" class="card-img" onclick="window.open(this.src)" role="button"
-                            tabIndex="0" alt="PROFILE">
-                        <div class="card-body">
-                            <h5 class="card-title">2 JUN</h5>
-                            <p class="card-text">By VIVEK PATEL</p>
-                        </div>
-                    </div>
+            <h2 class="tc">My <i class="fa fa-file-image-o" aria-hidden="true"></i> Gallery</h2>
+            <br>
+        </div>
+        <!--Content Area-->
+        <div class="main">
+            <div class="container">
+                <div id="card-container" class="row">
+                    <!-- <div class="col">
+                        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                            <div class="card-header">Header</div>
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Primary card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                          </div>
+                    </div> -->
                 </div>
-                <div class="col-12 col-sm-4 col-md-4">
-                    <div class="card ">
-                        <img src="img/1.jpg" class="card-img" onclick="window.open(this.src)" role="button"
-                            tabIndex="0" alt="PROFILE">
-                        <div class="card-body">
-                            <h5 class="card-title">3 JUN</h5>
-                            <p class="card-text">By VIVEK PATEL</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-4 col-md-4">
-                    <div class="card ">
-                        <img src="img/1.jpg" class="card-img" onclick="window.open(this.src)" role="button"
-                            tabIndex="0" alt="PROFILE">
-                        <div class="card-body">
-                            <h5 class="card-title">3 JUN</h5>
-                            <p class="card-text">By VIVEK PATEL</p>
-                        </div>
-                    </div>
-                </div>
-                
             </div>
         </div>
+
+        <!--Fatching data throuth JSON -->
+        <script>
+            window.onload = function () {
+                fetch('https://dascientist.github.io/iterable_card_demo/data.json').then((response) => {
+                    // console.log(response.json())
+                    return response.json();
+                }).then((data) => {
+                    console.log(data)
+                    let cardContainer = document.getElementById('card-container')
+                    data.forEach((data) => {
+                        cardContainer.innerHTML += '<div class="col-md-3">' +
+                            '<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">' +
+                            '<div class="card-header">' + data.head + '</div>' +
+                            '<img src="' + data.Img + '" class="card-img-top" alt="...">' +
+                            '<div class="card-body">' +
+                            '<h5 class="card-title">Primary card title</h5>' +
+                            '<p class="card-text">' + data.body + '</p>' +
+                            ' </div>' +
+                            '</div>' +
+                            '</div>';
+                    })
+                })
+            }
+        </script>
 
         <!--Footer Area-->
         <footer class="footer">
@@ -105,7 +114,8 @@
                     </div>
                     <div class="col-12 align-self-center">
                         <div class="text-center">
-                            <a href="https://in.pinterest.com/vivek17beceg105/"><i class="fa fa-pinterest" aria-hidden="true"></i>Pinterest</a>
+                            <a href="https://in.pinterest.com/vivek17beceg105/"><i class="fa fa-pinterest"
+                                    aria-hidden="true"></i>Pinterest</a>
                         </div>
                     </div>
                 </div>

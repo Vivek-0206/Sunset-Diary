@@ -14,29 +14,13 @@ body{
 }
 
 .jumbotron {
-    margin-top: 50px;
     background:#2f303b;
     color: floralwhite;
-    padding-top: 20px;
-    padding-bottom: 1rem;
-}
+} 
 hr{
     border-top: 1px solid aqua;    
 }
-.card {
-    width: 18rem;
-    text-align: center;
-    margin-top: 30px;
-    background-color:white;
-    text-decoration-color: cyan;
-    text-emphasis-color: cyan;
-    box-shadow: 0 4px 8px 0 rgba(8, 7, 7, 0.2), 0 6px 20px 0 rgba(24, 234, 214, 0.66);
-}
 
-.card-text {
-    color: rgb(106, 90, 205);
-    text-shadow: 2px 2px 4px #000000;
-}
 .tc{
     text-align: center;
     color: white;
