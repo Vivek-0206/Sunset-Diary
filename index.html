@@ -57,7 +57,9 @@
         </div>
         <div class="container">
             <hr>
-            <h2 class="tc">My <i class="fa fa-file-image-o" aria-hidden="true"></i> Gallery</h2>
+            <marquee size=3>
+                <h2 class="tc">My <i class="fa fa-file-image-o" aria-hidden="true"></i> Gallery</h2>
+            </marquee>
             <br>
         </div>
         <!--Content Area-->
@@ -81,7 +83,7 @@
         <!--Fatching data throuth JSON -->
         <script>
             window.onload = function () {
-                fetch('https://dascientist.github.io/iterable_card_demo/data.json').then((response) => {
+                fetch('data.json').then((response) => {
                     // console.log(response.json())
                     return response.json();
                 }).then((data) => {
@@ -91,10 +93,9 @@
                         cardContainer.innerHTML += '<div class="col-md-3">' +
                             '<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">' +
                             '<div class="card-header">' + data.head + '</div>' +
-                            '<img src="' + data.Img + '" class="card-img-top" alt="...">' +
+                            '<img src="' + data.Img + '" class="card-img-top" onclick="window.open(this.src)" role="button" tabIndex="0" alt="...">' +
                             '<div class="card-body">' +
-                            '<h5 class="card-title">Primary card title</h5>' +
-                            '<p class="card-text">' + data.body + '</p>' +
+                            '<h5 class="card-title">❤️ VIVEK PATEL </h5>' +
                             ' </div>' +
                             '</div>' +
                             '</div>';
