@@ -33,7 +33,6 @@
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
                             <li class="nav-item "><a class="nav-link" href="aboutus.html">About</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -43,7 +42,7 @@
         <!--Jumbotron Area-->
         <div class="jumbotron">
             <div class="container">
-                <div class="row row-header">
+                <div class="row row-header ">
                     <div class="col-12 col-sm-5 col-md-6 col-lg-8">
                         <h1>Shot On MI A3</h1>
                         <p>By VIVEK PATEL</p>
@@ -91,7 +90,7 @@
                     let cardContainer = document.getElementById('card-container')
                     data.forEach((data) => {
                         cardContainer.innerHTML += '<div class="col-md-3">' +
-                            '<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">' +
+                            '<div class="card text-white bg-dark" style="max-width: 18rem;">' +
                             '<div class="card-header">' + data.head + '</div>' +
                             '<img src="' + data.Img + '" class="card-img-top" onclick="window.open(this.src)" role="button" tabIndex="0" alt="...">' +
                             '<div class="card-body">' +
